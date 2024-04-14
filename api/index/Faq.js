@@ -2,8 +2,8 @@ const Faq = async () => {
   try {
     let data = await fetch("http://localhost:3000/faq");
     let res = await data.json();
-    let result = res.faq;
-    const faq = result.map((elem, index) => {
+    // let result = res.faq;
+    const faq = res.map((elem, index) => {
       return `<div>
           <input type="radio" id="open-${elem.taq}" name="over" />
           <input type="radio" id="close-${elem.taq}"" name="over" />

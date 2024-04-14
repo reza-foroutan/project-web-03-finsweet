@@ -1,11 +1,9 @@
 const OurProject = async () => {
   try {
-    let data = await fetch(
-      "https://kraken-ship.github.io/bardia-finsweet/db.json"
-    );
+    let data = await fetch("http://localhost:3000/ourproject");
     let res = await data.json();
-    let result = res.ourproject;
-    const thiswork = result.map((elem) => {
+    // let result = res.ourproject;
+    const thiswork = res.map((elem) => {
       return `<div>
           <a href="#">
             <div class="card-1">
