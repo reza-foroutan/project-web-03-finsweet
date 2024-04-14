@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
+    scroll-behavior: smooth; }
+  
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden; }
+  
+  a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none; }
+  
+  input[type="radio"] {
+    display: none; }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf"); }
+  
+  @font-face {
+    font-family: "Manrope";
+    src: url("../../public/fonts/Manrope-Regular.ttf"); }
+  
+  :root {
+    --Tint-blue: #1c1e53;
+    --Tint-blue-bg: #07081ea1;
+    --White: #fff;
+    --Space-grey: #f4f6fc33;
+    --Dark-grey: #bbbbcb;
+    --Dark-grey2: #bbbbcbee;
+    --Dark-blue: #282938;
+    --Royal-blue: #2405f2;
+    --Grey: #f4f6fc;
+    --Grey2: #f4f6fc86;
+    --Yellow: #fcd980;
+    --Accent: #eef4fa; }
+  

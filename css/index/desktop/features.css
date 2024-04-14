@@ -1,0 +1,78 @@
+div.features {
+  width: 100%;
+  height: auto;
+  background-color: var(--Grey); }
+  div.features > div.wrapper {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 47px;
+    align-items: center; }
+    div.features > div.wrapper > div.heading {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 12px;
+      align-items: center;
+      width: 630px; }
+      div.features > div.wrapper > div.heading > p.one {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 175% */ }
+      div.features > div.wrapper > div.heading > p.two {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px;
+        /* 133.333% */ }
+    div.features > div.wrapper > div.cards {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 18px; }
+      div.features > div.wrapper > div.cards > div.cards-r {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 22px; }
+        div.features > div.wrapper > div.cards > div.cards-r > div {
+          width: 100%;
+          padding-right: 32px;
+          padding-left: 48px;
+          padding-top: 58px;
+          padding-bottom: 48px;
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 12px;
+          background-color: var(--White); }
+          div.features > div.wrapper > div.cards > div.cards-r > div > img {
+            margin-bottom: 10px;
+            width: 30px;
+            height: 30px; }
+          div.features > div.wrapper > div.cards > div.cards-r > div p.one {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            /* 150% */ }
+          div.features > div.wrapper > div.cards > div.cards-r > div p.two {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /* 175% */
+            opacity: 0.7; }

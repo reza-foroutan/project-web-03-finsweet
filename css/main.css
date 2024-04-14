@@ -1,0 +1,40 @@
+@import url("./settings/settings.css");
+
+@import url("../css/index/desktop/desktop.css") only screen and
+  (min-width: 1201px);
+/* end Desktop size (index) */
+
+/* Tablet size (index) */
+@import url("./index/tablet/tablet.css") only screen and (min-width: 769px) and
+  (max-width: 1200px);
+/* end Tablet size (index) */
+
+/* Mobile size (index) */
+@import url("./index/mobile/mobile.css") only screen and (max-width: 768px);
+/* Mobile size (index) */
+
+/* Desktop size (about us) */
+@import url("./about/desktop/desktop.css") only screen and (min-width: 1201px);
+/* End Desktop size (about us) */
+
+/* Tablet size (about us) */
+@import url("./about/tablet/tablet.css") only screen and (min-width: 769px)
+  and(max-width: 1200px);
+/* End  Tablet size (about us) */
+
+/* Mobile size (about us) */
+@import url("./about/mobile/mobile.css") only screen and (max-width: 768px);
+/* End  Mobile size (about us) */
+
+/* Desktop size (price) */
+@import url("./price/desktop/desktop.css") only screen and (min-width: 1201px);
+/* End Desktop size (price) */
+
+/* Tablet size (price) */
+@import url("./price/tablet/tablet.css") only screen and (min-width: 769px) and
+  (max-width: 1200px);
+/* End  Tablet size (price) */
+
+/* Mobile size (price) */
+@import url("./price/mobile/mobile.css") only screen and (max-width: 768px);
+/* End  Mobile size (price) */

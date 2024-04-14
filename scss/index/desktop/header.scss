@@ -1,0 +1,70 @@
+@import "../../functions";
+// header start
+// navbar start
+header {
+  @include width-height(100%, 92px);
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  nav {
+    @include width-height(100%, 92px);
+    background-color: var(--Tint-blue);
+    > div.wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      > div.right {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: 48px;
+        // button start
+        > button {
+          @include width-height(150px, 50px);
+          background-color: transparent;
+          border-radius: 41px;
+          border: 2px solid var(--Space-grey);
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 175% */
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: 300ms;
+          &:hover {
+            transform: scale(1.05, 1.05);
+          }
+        }
+        // button end
+        // menu start
+        > div.menu {
+          display: flex;
+          column-gap: 32px;
+          > a {
+            color: var(--Dark-grey);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+            text-transform: capitalize;
+            &:hover {
+              color: var(--White);
+              transform: scale(1.05, 1.05);
+            }
+          }
+        }
+        > div.burgermenu {
+          display: none;
+        }
+        // menu end
+      }
+    }
+  }
+}
+// navbar end
+// header end

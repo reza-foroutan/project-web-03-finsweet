@@ -1,0 +1,286 @@
+.hero {
+  width: 100%;
+  height: 53px;
+  background-color: #1c1e53;
+}
+
+.hero .menu {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.hero .menu .logo {
+  width: 122px;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 10px;
+  display: none;
+}
+
+.hero .menu .right {
+  width: auto;
+  height: auto;
+  display: none;
+}
+
+.hero .menu .right nav {
+  width: inherit;
+  height: inherit;
+}
+
+.hero .menu .right nav ul {
+  width: inherit;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.hero .menu .right nav ul li {
+  width: auto;
+  height: auto;
+}
+
+.hero .menu .right nav ul li a {
+  display: block;
+  width: auto;
+  height: auto;
+  color: #bbbbcb;
+  font-family: poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.hero .menu .contact {
+  margin-left: 48px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.hero .menu .contact button {
+  width: 120px;
+  height: 40px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  background-color: transparent;
+  color: #fff;
+  font-family: poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.hero .bHero {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 0px;
+  justify-content: center;
+}
+
+.hero .bHero .text {
+  width: 100%;
+  height: 414px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 24px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero .bHero .illustration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .bHero .text .textBold {
+  color: var(--white);
+  /* Heading 1 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  /* 137.037% */
+}
+
+.hero .bHero .text .textHeading {
+  color: var(--white);
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.hero .bHero .text .btn {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.hero .bHero .text .btn button {
+  display: inline-flex;
+  padding: 16px 26px;
+  background-color: var(--ghanari);
+  border-radius: 41px;
+  color: var(--black);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.hero .bHero .text .btn a:nth-of-type(1) {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+}
+
+.hero .bHero .text .btn a:nth-of-type(2) svg {
+  fill: var(--White, #fff);
+  stroke-width: 1.5px;
+  stroke: var(--Grey, #f4f6fc);
+  width: 24px;
+}
+
+.hero .bHero .illustration {
+  perspective: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(-45deg);
+  }
+
+  to {
+    transform: rotateY(45deg);
+  }
+}
+
+.hero .bHero .illustration .center {
+  width: 90%;
+  height: 211.115px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .bHero .illustration .center svg {
+  width: 278.5px;
+  height: 161.115px;
+}
+
+.hero .menu .toggleMenu {
+  width: 35px;
+  height: 35px;
+  background-color: whitesmoke;
+  margin-left: 10px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.hero .menu .toggleMenu div {
+  width: 80%;
+  height: 2px;
+  background-color: #2b2b2b;
+  position: absolute;
+  left: calc(50% - 80% / 2);
+  cursor: pointer;
+}
+
+.hero .menu .toggleMenu div:nth-of-type(1) {
+  top: calc(50% - 2px / 2 - 5px);
+}
+
+.hero .menu .toggleMenu div:nth-of-type(2) {
+  top: calc(50% - 2px / 2);
+}
+
+.hero .menu .toggleMenu div:nth-of-type(3) {
+  top: calc(50% - 2px / 2 + 5px);
+}
+
+.menuMobile {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2b2b;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: -100%;
+  transition: 300ms;
+}
+
+.menuMobile nav {
+  width: 100%;
+  height: inherit;
+}
+
+.menuMobile nav ul {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+}
+
+.menuMobile nav ul li {
+  width: 100%;
+  height: 40px;
+}
+
+.menuMobile nav ul li a {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  display: block;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: 40px;
+  transition: 300ms;
+}
+
+.menuMobile nav ul li a:hover {
+  background-color: deeppink;
+}
+
+.menuMobile nav ul li:nth-last-of-type(1):hover a {
+  background-color: transparent;
+}
+
+.active {
+  left: 0% !important;
+}

@@ -1,0 +1,107 @@
+@import "../../functions";
+div.hero {
+  @include width-height(100%, 600px);
+  background-color: var(--Tint-blue);
+  > div.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: top;
+    // text srart
+    > div.Htext {
+      @include width-height(500px, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 24px;
+      margin-top: 100px;
+      // heading start
+      > div.top {
+        > h1 {
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 68px; /* 137.037% */
+        }
+      }
+      // heading end
+      // paragraph start
+      div.middle {
+        > p {
+          width: 500px;
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          opacity: 0.7;
+        }
+      }
+      // pragraph end
+      div.bottom {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: 40px;
+        margin-top: 24px;
+        // button start
+        a {
+          > button {
+            @include width-height(180px, 54px);
+            border-radius: 41px;
+            background: var(--Yellow);
+            color: #1b1c2b;
+            font-family: "Manrope";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px; /* 177.778% */
+            border: none;
+            cursor: pointer;
+            transition: 300ms;
+            &:hover {
+              transform: scale(1.05, 1.05);
+            }
+          }
+        }
+        // button end
+        // text button start
+        > a {
+          display: flex !important;
+          flex-flow: row nowrap;
+          column-gap: 14px;
+          transition: 300ms;
+          &:hover {
+            transform: scale(1.05, 1.05);
+          }
+          > p {
+            color: var(--White);
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+            text-transform: capitalize;
+          }
+        }
+        // text button end
+      }
+    }
+    // illustration start
+    div.illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 100%;
+        transition: 800ms;
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+    // illustration end
+  }
+}

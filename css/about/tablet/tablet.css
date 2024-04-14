@@ -1,0 +1,13 @@
+@import "./about-hero.css";
+@import "./who.css";
+@import "./process.css";
+@import "./mission.css";
+@import "./benefits.css";
+@import "./team.css";
+
+.wrapper {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}

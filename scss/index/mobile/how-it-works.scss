@@ -1,0 +1,136 @@
+@import "../../functions";
+// how it works start
+div.how-it-works {
+  @include width-height(100%, auto);
+  background-color: var(--Grey);
+  > div.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // heading start
+    > div.heading {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 10px;
+      @include width-height(100%, auto);
+      > div.top {
+        > p {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 50px; /* 133.333% */
+          text-align: center;
+        }
+      }
+      > div.middle {
+        display: flex;
+        justify-content: center;
+        > p {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px; /* 175% */
+          opacity: 0.7;
+          text-align: center;
+          margin-top: 6px;
+          max-width: 300px;
+        }
+      }
+      div.bottom {
+        display: flex;
+        justify-content: center;
+        > a {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 10px;
+          align-items: center;
+          justify-content: center;
+          > p {
+            color: var(--Royal-Blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; /* 177.778% */
+          }
+          img {
+            width: 18px;
+          }
+          &:active {
+            color: var(--Royal-blue);
+          }
+        }
+      }
+    }
+    // heading end
+    // cards start
+    > div.cards {
+      @include width-height(100%, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 35px;
+      > div.row {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        @include width-height(100%, 100%/2);
+        row-gap: 25px;
+        > div {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          row-gap: 10px;
+          @include width-height(100%, 100%);
+          max-width: 290px;
+          > div.rect {
+            @include width-height(40px, 40px);
+            background-color: var(--Royal-blue);
+            border-radius: 8px;
+            position: relative;
+            > img {
+              @include width-height(40px, 40px);
+            }
+            > p.number {
+              color: var(--White);
+              font-family: "Poppins";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              position: absolute;
+              top: 6px;
+              left: 12px;
+            }
+          }
+          > p.h {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; /* 150% */
+          }
+          > p.t {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 175% */
+            opacity: 0.7;
+            text-align: center;
+          }
+        }
+      }
+    }
+    // cards end
+  }
+}
+// how it works end

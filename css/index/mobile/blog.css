@@ -1,0 +1,74 @@
+div.blog {
+  width: 100%;
+  height: auto; }
+  div.blog div.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 24px;
+    padding-bottom: 50px; }
+    div.blog div.wrapper p.h {
+      color: var(--Dark-blue);
+      font-family: "Poppins";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+      /* 133.333% */
+      text-align: center; }
+    div.blog div.wrapper div.blogs {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      row-gap: 10px; }
+      div.blog div.wrapper div.blogs div {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 8px;
+        margin-bottom: 14px; }
+        div.blog div.wrapper div.blogs div img {
+          width: 100%; }
+        div.blog div.wrapper div.blogs div p.date {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */
+          opacity: 0.7;
+          margin-top: 4px; }
+        div.blog div.wrapper div.blogs div p.one {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px;
+          /* 150% */ }
+        div.blog div.wrapper div.blogs div p.two {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          /* 175% */
+          opacity: 0.7; }
+        div.blog div.wrapper div.blogs div a {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 10px;
+          color: #282938;
+          font-family: "Poppins";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */ }
+          div.blog div.wrapper div.blogs div a img {
+            width: 18px; }

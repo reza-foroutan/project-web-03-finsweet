@@ -1,0 +1,70 @@
+div.blog {
+  width: 100%;
+  height: auto; }
+  div.blog div.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 64px;
+    padding-bottom: 128px; }
+    div.blog div.wrapper p.h {
+      color: var(--Dark-blue);
+      font-family: "Poppins";
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+      /* 133.333% */ }
+    div.blog div.wrapper div.blogs {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      column-gap: 32px; }
+      div.blog div.wrapper div.blogs div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 16px; }
+        div.blog div.wrapper div.blogs div img {
+          width: 100%; }
+        div.blog div.wrapper div.blogs div p.date {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */
+          opacity: 0.7;
+          margin-top: 16px; }
+        div.blog div.wrapper div.blogs div p.one {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px;
+          /* 150% */ }
+        div.blog div.wrapper div.blogs div p.two {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          /* 175% */
+          opacity: 0.7; }
+        div.blog div.wrapper div.blogs div a {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 10px;
+          color: #282938;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */ }
+          div.blog div.wrapper div.blogs div a img {
+            width: 20px; }

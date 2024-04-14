@@ -1,0 +1,90 @@
+@import "../../functions";
+// features start
+div.features {
+  @include width-height(100%, auto);
+  background-color: var(--Grey);
+  > div.wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 47px;
+    align-items: center;
+    // heading
+    > div.heading {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 12px;
+      align-items: center;
+      width: 630px;
+      > p.one {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+      > p.two {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 133.333% */
+      }
+    }
+    // cards
+    > div.cards {
+      @include width-height(100%, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 10px;
+      > div.cards-r {
+        @include width-height(100%, auto);
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 10px;
+        > div {
+          width: 100%;
+          padding-right: 16px;
+          padding-left: 16px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 12px;
+          background-color: var(--White);
+          position: relative;
+          > img {
+            margin-bottom: 10px;
+            @include width-height(25px, 25px);
+          }
+          p.one {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; /* 150% */
+          }
+          p.two {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 175% */
+            opacity: 0.7;
+            position: relative;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// features end

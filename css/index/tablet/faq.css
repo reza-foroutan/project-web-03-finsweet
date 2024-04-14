@@ -1,0 +1,167 @@
+div.faq {
+  width: 100%;
+  height: auto; }
+  div.faq div.wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    align-items: center; }
+    div.faq div.wrapper div.h {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 8px;
+      align-items: center; }
+      div.faq div.wrapper div.h p {
+        color: var(--Dark-blue);
+        font-family: "Poppins";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        /* 147.368% */ }
+      div.faq div.wrapper div.h a {
+        color: var(--Royal-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        /* 177.778% */
+        opacity: 0.9; }
+    div.faq div.wrapper div.q {
+      width: 74%;
+      height: auto;
+      display: flex;
+      flex-flow: column nowrap; }
+      div.faq div.wrapper div.q div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative; }
+        div.faq div.wrapper div.q div div.ask {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 50px;
+          align-items: center;
+          width: 100%;
+          height: 80px; }
+          div.faq div.wrapper div.q div div.ask p.number {
+            color: var(--Royal-Blue, #2405f2);
+            text-align: center;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            /* 150% */ }
+          div.faq div.wrapper div.q div div.ask p.q {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            /* 150% */ }
+        div.faq div.wrapper div.q div label {
+          display: inline-block;
+          width: fit-content;
+          cursor: pointer; }
+          div.faq div.wrapper div.q div label i {
+            color: var(--Dark-blue); }
+        div.faq div.wrapper div.q div label.s {
+          position: absolute;
+          right: 0;
+          top: 32px;
+          background-color: var(--White); }
+        div.faq div.wrapper div.q div label.c {
+          position: absolute;
+          right: 0;
+          top: 32px;
+          background-color: var(--White);
+          display: none; }
+        div.faq div.wrapper div.q div div.i {
+          width: 100%;
+          height: 0;
+          transition: 300ms;
+          padding: 0 72px;
+          overflow: hidden; }
+          div.faq div.wrapper div.q div div.i p {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            /* 177.778% */
+            opacity: 0.9; }
+      div.faq div.wrapper div.q hr {
+        border: none;
+        background-color: #ececf1;
+        width: 100%;
+        height: 2px; }
+
+#show1:checked ~ div.i {
+  height: 80px; }
+
+#show1:checked ~ label.s {
+  display: none; }
+
+#show1:checked ~ label.c {
+  display: inline-block; }
+
+#show2:checked ~ div.i {
+  height: 80px; }
+
+#show2:checked ~ label.s {
+  display: none; }
+
+#show2:checked ~ label.c {
+  display: inline-block; }
+
+#show3:checked ~ div.i {
+  height: 80px; }
+
+#show3:checked ~ label.s {
+  display: none; }
+
+#show3:checked ~ label.c {
+  display: inline-block; }
+
+#show4:checked ~ div.i {
+  height: 80px; }
+
+#show4:checked ~ label.s {
+  display: none; }
+
+#show4:checked ~ label.c {
+  display: inline-block; }
+
+#show5:checked ~ div.i {
+  height: 80px; }
+
+#show5:checked ~ label.s {
+  display: none; }
+
+#show5:checked ~ label.c {
+  display: inline-block; }
+
+#close1:checked ~ div.i {
+  height: 0; }
+
+#close2:checked ~ div.i {
+  height: 0; }
+
+#close3:checked ~ div.i {
+  height: 0; }
+
+#close4:checked ~ div.i {
+  height: 0; }
+
+#close5:checked ~ div.i {
+  height: 0; }

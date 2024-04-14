@@ -1,0 +1,112 @@
+@import "../../functions";
+// hero start
+div.hero {
+  @include width-height(100%, 648px);
+  background-color: var(--Tint-blue);
+  > div.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: top;
+    position: relative;
+    // text srart
+    > div.Htext {
+      @include width-height(582px, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 24px;
+      margin-top: 150px;
+      position: absolute;
+      // heading start
+      > div.top {
+        > h1 {
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 54px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 74px; /* 137.037% */
+          text-align: center;
+        }
+      }
+      // heading end
+      // paragraph start
+      div.middle {
+        > p {
+          width: 562px;
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          opacity: 0.7;
+          text-align: center;
+        }
+      }
+      // pragraph end
+      div.bottom {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 60px;
+        margin-top: 24px;
+        // button start
+        a {
+          > button {
+            @include width-height(180px, 48px);
+            border-radius: 41px;
+            background: #fcd980;
+            color: #1b1c2b;
+            font-family: "Manrope";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px; /* 177.778% */
+            border: none;
+            cursor: pointer;
+            transition: 300ms;
+            &:hover {
+              transform: scale(1.05, 1.05);
+            }
+          }
+        }
+        // button end
+        // text button start
+        > a {
+          display: flex !important;
+          flex-flow: row nowrap;
+          column-gap: 16px;
+          transition: 300ms;
+          &:hover {
+            transform: scale(1.05, 1.05);
+          }
+          > p {
+            color: var(--White);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+            text-transform: capitalize;
+          }
+          img {
+            width: 20px;
+          }
+        }
+        // text button end
+      }
+    }
+    // illustration start
+    div.illustration {
+      > img {
+        margin-top: 30px;
+        transition: 800ms;
+        opacity: 0.1;
+      }
+    }
+    // illustration end
+  }
+}
+// hero end

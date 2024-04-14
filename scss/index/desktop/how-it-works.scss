@@ -1,0 +1,120 @@
+@import "../../functions";
+// how it works start
+div.how-it-works {
+  @include width-height(100%, auto);
+  background-color: var(--Grey);
+  > div.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    column-gap: 142px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    // heading start
+    > div.heading {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 16px;
+      @include width-height(405px, auto);
+      > div.top {
+        > p {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 44px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 64px; /* 133.333% */
+        }
+      }
+      > div.middle {
+        > p {
+          color: var(--Dark-blue);
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          opacity: 0.7;
+        }
+      }
+      div.bottom {
+        > a {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 10px;
+          align-items: center;
+          > p {
+            color: var(--Royal-Blue);
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; /* 177.778% */
+          }
+          &:active {
+            color: var(--Royal-blue);
+          }
+        }
+      }
+    }
+    // heading end
+    // cards start
+    > div.cards {
+      @include width-height(656px, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 35px;
+      > div.row {
+        display: flex;
+        flex-flow: row nowrap;
+        @include width-height(100%, 100%/2);
+        column-gap: 25px;
+        > div {
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 16px;
+          @include width-height(100%/2, 100%);
+          > div.rect {
+            @include width-height(50px, 50px);
+            background-color: var(--Royal-blue);
+            border-radius: 8px;
+            position: relative;
+            > img {
+              @include width-height(50px, 50px);
+            }
+            > p.number {
+              color: var(--White);
+              font-family: "Poppins";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 32px; /* 177.778% */
+              position: absolute;
+              top: 9px;
+              left: 15px;
+            }
+          }
+          > p.h {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; /* 150% */
+          }
+          > p.t {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 175% */
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    // cards end
+  }
+}
+// how it works end

@@ -1,0 +1,129 @@
+header {
+  width: 100%;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+  header nav {
+    width: 100%;
+    height: 72px;
+    background-color: var(--Tint-blue); }
+    header nav > div.wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative; }
+      header nav > div.wrapper > div.logo > a > img {
+        width: 100px; }
+      header nav > div.wrapper > div.right {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: 18px; }
+        header nav > div.wrapper > div.right > button {
+          width: 90px;
+          height: 35px;
+          background-color: transparent;
+          border-radius: 41px;
+          border: 2px solid var(--Space-grey);
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: 300ms;
+          order: 1; }
+          header nav > div.wrapper > div.right > button:hover {
+            transform: scale(1.05, 1.05); }
+        header nav > div.wrapper > div.right > div.menu {
+          display: none; }
+        header nav > div.wrapper > div.right > div.burgermenu {
+          order: 2;
+          z-index: 4; }
+          header nav > div.wrapper > div.right > div.burgermenu > label {
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            cursor: pointer; }
+            header nav > div.wrapper > div.right > div.burgermenu > label > i {
+              color: var(--White);
+              font-size: 20px;
+              font-weight: 600; }
+          header nav > div.wrapper > div.right > div.burgermenu > label:nth-of-type(2) {
+            cursor: default; }
+            header nav > div.wrapper > div.right > div.burgermenu > label:nth-of-type(2) > div.bgMenu {
+              position: absolute;
+              top: 92px;
+              left: 0;
+              width: 100%;
+              height: calc(100vh - 92px);
+              background-color: var(--Tint-blue-bg);
+              display: none; }
+            header nav > div.wrapper > div.right > div.burgermenu > label:nth-of-type(2) > div.HmenuClose {
+              position: absolute;
+              top: 24px;
+              right: 33px;
+              background-color: var(--Tint-blue);
+              display: none;
+              width: 22px;
+              cursor: pointer;
+              text-align: center; }
+              header nav > div.wrapper > div.right > div.burgermenu > label:nth-of-type(2) > div.HmenuClose > i {
+                color: var(--White);
+                font-size: 24px;
+                font-weight: 600; }
+          header nav > div.wrapper > div.right > div.burgermenu > #openmenu:checked ~ div.Hmenu {
+            height: 370px;
+            border-top: 1px solid var(--Dark-grey2); }
+          header nav > div.wrapper > div.right > div.burgermenu > #openmenu:checked ~ label:nth-of-type(2) > div.bgMenu {
+            display: block; }
+          header nav > div.wrapper > div.right > div.burgermenu > #openmenu:checked ~ label:nth-of-type(2) > div.HmenuClose {
+            display: block; }
+          header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu {
+            width: 100%;
+            height: 0;
+            transition: 300ms;
+            overflow: hidden;
+            background-color: var(--Tint-blue);
+            position: absolute;
+            right: 0;
+            top: 72px;
+            transition: 300ms;
+            z-index: 1 !important; }
+            header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu > div {
+              width: 100%;
+              height: 60px;
+              display: flex;
+              align-items: center; }
+              header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu > div > a {
+                width: 100%;
+                height: 100%;
+                display: flex !important;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0 50px;
+                color: var(--Dark-grey);
+                font-family: "Poppins";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 175% */
+                text-transform: capitalize; }
+                header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu > div > a:hover {
+                  color: var(--White);
+                  transform: scale(1.05, 1.05); }
+                header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu > div > a > i {
+                  display: none; }
+            header nav > div.wrapper > div.right > div.burgermenu > div.Hmenu > hr {
+              width: 80%;
+              height: 1px;
+              border: none;
+              background-color: var(--Space-grey);
+              margin: auto; }

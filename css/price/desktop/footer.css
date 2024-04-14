@@ -1,0 +1,212 @@
+footer {
+    width: 100%;
+    height: auto;
+    background: #1C1E53;
+    ;
+    position: relative;
+}
+
+footer>div.inside-f {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 96px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+}
+
+footer>div.inside-f>div:nth-of-type(1) {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 300px;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 24px;
+    position: relative;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>svg {
+    width: 160px;
+    height: 32.405px;
+    flex-shrink: 0;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>p {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 175% */
+    opacity: 0.8;
+    width: 399px;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>div.contact-info {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 30px;
+    width: 67%;
+    height: 95px;
+    background-color: #FCD980;
+    padding-left: 37px;
+    padding-right: 137px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>div.contact-info>div {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    margin-top: 18px;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>div.contact-info>div>p:nth-of-type(1) {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+    width: 100%;
+
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.left>div.contact-info>div>p:nth-of-type(2) {
+    color: var(--Dark-blue, #282938);
+
+    /* Paragraph */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 24px;
+    padding-left: 140px;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right>p:nth-of-type(1) {
+
+    color: #FFF;
+
+    /* Heading 2 */
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    /* 133.333% */
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right>p:nth-of-type(2) {
+    color: var(--Grey, #F4F6FC);
+
+    /* Paragraph */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    opacity: 0.8;
+    width: 86%;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right>div.media-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+    width: 30%;
+    margin-top: 8px;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right>div.media-icon>a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+}
+
+footer>div.inside-f>div:nth-of-type(1)>div.right>div.media-icon>a>svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #FFFFFF;
+}
+
+footer>div.inside-f>div:nth-of-type(2) {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 409px;
+    width: 100%;
+    height: 79px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+footer>div.inside-f>div:nth-of-type(2)>p {
+
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 175% */
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 160px;
+    width: 33%;
+}
+
+footer>div.inside-f>div:nth-of-type(2)>div {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 100%;
+    flex-flow: row nowrap;
+    text-align: center;
+    align-items: center;
+    column-gap: 32px;
+    margin-right: 15px;
+}
+
+footer>div.inside-f>div:nth-of-type(2)>div>a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer>div.inside-f>div:nth-of-type(2)>div>a>p {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 175% */
+    text-transform: capitalize;
+}

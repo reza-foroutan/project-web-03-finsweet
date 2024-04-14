@@ -1,0 +1,158 @@
+@import "../../functions";
+// header start
+// navbar start
+header {
+  @include width-height(100%, 72px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  nav {
+    @include width-height(100%, 72px);
+    background-color: var(--Tint-blue);
+    > div.wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      > div.logo {
+        > a {
+          > img {
+            width: 100px;
+          }
+        }
+      }
+      > div.right {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: 18px;
+        // button start
+        > button {
+          @include width-height(90px, 35px);
+          background-color: transparent;
+          border-radius: 41px;
+          border: 2px solid var(--Space-grey);
+          color: var(--White);
+          font-family: "Poppins";
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 175% */
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: 300ms;
+          order: 1;
+          &:hover {
+            transform: scale(1.05, 1.05);
+          }
+        }
+        // button end
+        // menu start
+        > div.menu {
+          display: none;
+        }
+        > div.burgermenu {
+          order: 2;
+          z-index: 4;
+          > label {
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            cursor: pointer;
+            > i {
+              color: var(--White);
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+          > label:nth-of-type(2) {
+            cursor: default;
+            > div.bgMenu {
+              position: absolute;
+              top: 92px;
+              left: 0;
+              width: 100%;
+              height: calc(100vh - 92px);
+              background-color: var(--Tint-blue-bg);
+              display: none;
+            }
+            > div.HmenuClose {
+              position: absolute;
+              top: 24px;
+              right: 33px;
+              background-color: var(--Tint-blue);
+              display: none;
+              width: 22px;
+              cursor: pointer;
+              text-align: center;
+              > i {
+                color: var(--White);
+                font-size: 24px;
+                font-weight: 600;
+              }
+            }
+          }
+          > #openmenu:checked ~ div.Hmenu {
+            height: 370px;
+            border-top: 1px solid var(--Dark-grey2);
+          }
+          > #openmenu:checked ~ label:nth-of-type(2) > div.bgMenu {
+            display: block;
+          }
+          > #openmenu:checked ~ label:nth-of-type(2) > div.HmenuClose {
+            display: block;
+          }
+          > div.Hmenu {
+            @include width-height(100%, 0);
+            transition: 300ms;
+            overflow: hidden;
+            background-color: var(--Tint-blue);
+            position: absolute;
+            right: 0;
+            top: 72px;
+            transition: 300ms;
+            z-index: 1 !important;
+            > div {
+              @include width-height(100%, 60px);
+              display: flex;
+              align-items: center;
+              > a {
+                @include width-height(100%, 100%);
+                display: flex !important;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0 50px;
+                color: var(--Dark-grey);
+                font-family: "Poppins";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px; /* 175% */
+                text-transform: capitalize;
+                &:hover {
+                  color: var(--White);
+                  transform: scale(1.05, 1.05);
+                }
+                > i {
+                  display: none;
+                }
+              }
+            }
+            > hr {
+              width: 80%;
+              height: 1px;
+              border: none;
+              background-color: var(--Space-grey);
+              margin: auto;
+            }
+          }
+        }
+        // menu end
+      }
+    }
+  }
+}
+// navbar end
+// header end

@@ -1,0 +1,445 @@
+div.faq {
+    width: 100%;
+    height: auto;
+    background: #FFF;
+}
+
+div.faq>div.inside-faq {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 30px;
+}
+
+div.faq>div.inside-faq>div.faq-heading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 16px;
+    align-items: center;
+}
+
+div.faq>div.inside-faq>div.faq-heading>p {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+}
+
+div.faq>div.inside-faq>div.faq-heading>a {
+    color: var(--Royal-Blue, #2405F2);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+    text-decoration: none;
+    opacity: 0.87;
+    text-align: left;
+}
+
+div.faq>div.inside-faq>div.faq-q {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.faq>div.inside-faq>div.faq-q>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    transition: 300ms;
+    transition: 300ms;
+    border-bottom: 3px solid #ececf1;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>div.q {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>div.q>p:nth-of-type(1) {
+
+    color: var(--Royal-Blue, #2405F2);
+    text-align: center;
+
+    /* Heading 6 */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 150% */
+}
+
+div.faq>div.inside-faq>div.faq-q>div>div.q>p:nth-of-type(2) {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-1] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-1]>svg {
+
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-1] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    display: none;
+
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-1]>svg {
+
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>div.over {
+    width: 100%;
+    height: 100px;
+    flex-flow: column nowrap;
+    position: relative;
+    display: none;
+    transition: 3000ms;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>div.over>p {
+    color: var(--Dark-blue, #282938);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    display: inline-block;
+    margin-left: 43px;
+    text-align: left;
+}
+
+#open-1,
+#close-1 {
+    display: none;
+}
+
+#open-1:checked~div.over {
+    display: block;
+    transition: 3000ms;
+}
+
+#open-1:checked~label[for=open-1] {
+    display: none;
+}
+
+#open-1:checked~label[for=close-1] {
+    display: block;
+}
+
+#close-1:checked~div.over {
+    display: none;
+}
+
+#close-1:checked~label[for=close-1] {
+    display: none;
+}
+
+#close-1:checked~label[for=open-1] {
+    display: block;
+}
+
+/* ///////////////////// */
+#open-2,
+#close-2 {
+    display: none;
+}
+
+#open-2:checked~div.over {
+    display: block;
+    transition: 3000ms;
+}
+
+#open-2:checked~label[for=open-2] {
+    display: none;
+}
+
+#open-2:checked~label[for=close-2] {
+    display: block;
+}
+
+#close-2:checked~div.over {
+    display: none;
+}
+
+#close-2:checked~label[for=close-2] {
+    display: none;
+}
+
+#close-2:checked~label[for=open-2] {
+    display: block;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-2] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    display: none;
+
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-2] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-2]>svg {
+
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-2]>svg {
+
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+/* //////////// */
+#open-3,
+#close-3 {
+    display: none;
+}
+
+#open-3:checked~div.over {
+    display: block;
+    transition: 3000ms;
+}
+
+#open-3:checked~label[for=open-3] {
+    display: none;
+}
+
+#open-3:checked~label[for=close-3] {
+    display: block;
+}
+
+#close-3:checked~div.over {
+    display: none;
+}
+
+#close-3:checked~label[for=close-3] {
+    display: none;
+}
+
+#close-3:checked~label[for=open-3] {
+    display: block;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-3] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    display: none;
+
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-3] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-3]>svg {
+
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-3]>svg {
+
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+/* //////////////////////////////// */
+#open-4,
+#close-4 {
+    display: none;
+}
+
+#open-4:checked~div.over {
+    display: block;
+    transition: 3000ms;
+}
+
+#open-4:checked~label[for=open-4] {
+    display: none;
+}
+
+#open-4:checked~label[for=close-4] {
+    display: block;
+}
+
+#close-4:checked~div.over {
+    display: none;
+}
+
+#close-4:checked~label[for=close-4] {
+    display: none;
+}
+
+#close-4:checked~label[for=open-4] {
+    display: block;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-4] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    display: none;
+
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-4] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-4]>svg {
+
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-4]>svg {
+
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+/* 
+
+////////////////////////////////////////////// */
+#open-5,
+#close-5 {
+    display: none;
+}
+
+#open-5:checked~div.over {
+    display: block;
+    transition: 3000ms;
+}
+
+#open-5:checked~label[for=open-5] {
+    display: none;
+}
+
+#open-5:checked~label[for=close-5] {
+    display: block;
+}
+
+#close-5:checked~div.over {
+    display: none;
+}
+
+#close-5:checked~label[for=close-5] {
+    display: none;
+}
+
+#close-5:checked~label[for=open-5] {
+    display: block;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-5] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    display: none;
+
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-5] {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=close-5]>svg {
+
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}
+
+div.faq>div.inside-faq>div.faq-q>div>label[for=open-5]>svg {
+
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    fill: var(--Dark-blue, #282938);
+    opacity: 0.7;
+}

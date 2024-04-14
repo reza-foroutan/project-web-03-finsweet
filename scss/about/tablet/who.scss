@@ -1,0 +1,97 @@
+@import "../../functions";
+// who we are start
+div.who {
+  @include width-height(100%, auto);
+  div.wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    // text
+    div.push {
+      max-width: 800px;
+      @include width-height(100%, auto);
+      @include flex-column();
+      position: relative;
+      background-color: #f4f5f5;
+      padding: 40px;
+      padding-bottom: 390px;
+      div.top {
+        @include flex-column();
+        column-gap: 20px;
+        div.left {
+          @include width-height(100%, auto);
+          @include flex-column();
+          align-items: center;
+          p.one {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+          }
+          p.two {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px; /* 147.368% */
+            margin-top: 10px;
+          }
+          p.three {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 175% */
+            opacity: 0.7;
+            margin-top: 10px;
+            width: 90%; // W
+            max-width: 500px;
+            text-align: center;
+          }
+        }
+        div.right {
+          @include width-height(100%, auto);
+          @include flex-column();
+          align-items: center;
+          margin-top: 34px;
+          p.one {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 40px; /* 147.368% */
+          }
+          p.two {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 175% */
+            opacity: 0.7;
+            margin-top: 10px;
+            width: 90%; // W
+            max-width: 500px;
+            text-align: center;
+          }
+        }
+      }
+      // image
+      div.bottom {
+        @include width-height(100%, auto);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        img {
+          @include width-height(100%, 340px); // H
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

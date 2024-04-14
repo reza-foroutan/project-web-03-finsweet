@@ -1,0 +1,164 @@
+div.our-work {
+  width: 100%;
+  height: auto;
+  background-color: var(--White); }
+  div.our-work div.wrapper {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 64px; }
+    div.our-work div.wrapper > div.heading {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto; }
+      div.our-work div.wrapper > div.heading > p {
+        color: var(--Dark-blue);
+        font-family: "Poppins";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+        /* 133.333% */ }
+      div.our-work div.wrapper > div.heading > a {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 16px;
+        align-items: center; }
+        div.our-work div.wrapper > div.heading > a > p {
+          color: #282938;
+          font-family: "Poppins";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          /* 175% */ }
+    div.our-work div.wrapper > div.cards {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 32px; }
+      div.our-work div.wrapper > div.cards > a {
+        width: 65%; }
+        div.our-work div.wrapper > div.cards > a > div.card1 {
+          width: 100%;
+          height: 500px;
+          position: relative;
+          overflow: hidden; }
+          div.our-work div.wrapper > div.cards > a > div.card1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          div.our-work div.wrapper > div.cards > a > div.card1:hover > div.hover {
+            left: 0; }
+          div.our-work div.wrapper > div.cards > a > div.card1 > div.hover {
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+            padding-left: 40px;
+            padding-bottom: 66px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            row-gap: 16px;
+            position: absolute;
+            top: 0;
+            left: -550px;
+            transition: 300ms; }
+            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > p.one {
+              color: var(--White);
+              font-family: "Poppins";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 30px;
+              /* 150% */ }
+            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > p.two {
+              color: var(--White);
+              font-family: "Poppins";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px;
+              /* 175% */
+              opacity: 0.8;
+              width: 90%; }
+            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div {
+              display: flex;
+              flex-flow: row nowrap;
+              column-gap: 16px;
+              margin-top: 24px; }
+              div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div > p {
+                color: var(--Yellow);
+                font-family: "Poppins";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 175% */ }
+              div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div img {
+                width: 20px;
+                display: none; }
+      div.our-work div.wrapper > div.cards > div.cards-c {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 32px;
+        width: 30%;
+        height: 100%;
+        flex-shrink: 0; }
+        div.our-work div.wrapper > div.cards > div.cards-c > a {
+          width: 100%;
+          height: auto; }
+          div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 {
+            width: 100%;
+            height: 234px;
+            position: relative;
+            overflow: hidden; }
+            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2:hover > div.hover {
+              bottom: 0; }
+            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover {
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: flex-end;
+              row-gap: 10px;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+              padding-left: 56px;
+              padding-bottom: 45px;
+              position: absolute;
+              left: 0;
+              bottom: -284px;
+              transition: 300ms; }
+              div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > p {
+                color: var(--White);
+                font-family: "Poppins";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                /* 150% */
+                width: 200px; }
+              div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div {
+                display: flex;
+                flex-flow: row nowrap;
+                column-gap: 16px; }
+                div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div > p {
+                  color: var(--Yellow);
+                  font-family: "Poppins";
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 28px;
+                  /* 175% */ }
+                div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div img {
+                  width: 20px;
+                  display: none; }

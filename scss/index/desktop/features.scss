@@ -1,0 +1,86 @@
+@import "../../functions";
+// features start
+div.features {
+  @include width-height(100%, auto);
+  background-color: var(--Grey);
+  > div.wrapper {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 47px;
+    align-items: center;
+    // heading
+    > div.heading {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 12px;
+      align-items: center;
+      width: 630px;
+      > p.one {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+      > p.two {
+        color: var(--Dark-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 133.333% */
+      }
+    }
+    // cards
+    > div.cards {
+      @include width-height(100%, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 18px;
+      > div.cards-r {
+        @include width-height(100%, auto);
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 22px;
+        > div {
+          width: 100%;
+          padding-right: 32px;
+          padding-left: 48px;
+          padding-top: 58px;
+          padding-bottom: 48px;
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 12px;
+          background-color: var(--White);
+          > img {
+            margin-bottom: 10px;
+            @include width-height(30px, 30px);
+          }
+          p.one {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px; /* 150% */
+          }
+          p.two {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 175% */
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+// features end

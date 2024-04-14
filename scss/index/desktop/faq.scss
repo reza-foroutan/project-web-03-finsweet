@@ -1,0 +1,136 @@
+@import "../../functions";
+// faq start
+div.faq {
+  @include width-height(100%, auto);
+  div.wrapper {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    //heading
+    div.h {
+      @include width-height(30%, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 16px;
+      p {
+        color: var(--Dark-blue);
+        font-family: "Poppins";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px; /* 147.368% */
+      }
+      a {
+        color: var(--Royal-blue);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 177.778% */
+        opacity: 0.9;
+      }
+    }
+    // questions
+    div.q {
+      @include width-height(60%, auto);
+      display: flex;
+      flex-flow: column nowrap;
+      div {
+        @include width-height(100%, auto);
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        div.ask {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 50px;
+          align-items: center;
+          @include width-height(100%, 80px);
+          p.number {
+            color: var(--Royal-Blue, #2405f2);
+            text-align: center;
+            font-family: "Poppins";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 150% */
+          }
+          p.q {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 150% */
+          }
+        }
+        label {
+          display: inline-block;
+          width: fit-content;
+          cursor: pointer;
+          i {
+            color: var(--Dark-blue);
+          }
+        }
+        label.s {
+          position: absolute;
+          right: 0;
+          top: 32px;
+          background-color: var(--White);
+        }
+        label.c {
+          position: absolute;
+          right: 0;
+          top: 32px;
+          background-color: var(--White);
+          display: none;
+        }
+        div.i {
+          @include width-height(100%, 0);
+          transition: 300ms;
+          padding: 0 72px;
+          overflow: hidden;
+          p {
+            color: var(--Dark-blue);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 177.778% */
+            opacity: 0.9;
+          }
+        }
+      }
+      hr {
+        border: none;
+        background-color: #ececf1;
+        @include width-height(100%, 2px);
+      }
+    }
+  }
+}
+// lables and inputs
+@for $i from 1 through 5 {
+  #show#{$i}:checked {
+    ~ div.i {
+      height: 90px;
+    }
+    ~ label.s {
+      display: none;
+    }
+    ~ label.c {
+      display: inline-block;
+    }
+  }
+}
+@for $i from 1 through 5 {
+  #close#{$i}:checked {
+    ~ div.i {
+      height: 0;
+    }
+  }
+}
+// faq end
