@@ -80,34 +80,31 @@
       "illustrationImageAlt": "illustration"
     }
   ],
-  "it_works": [
+
+  "thiswork": [
     {
       "id": 1,
       "number": "01",
       "title": "Strategy",
-      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
     },
     {
       "id": 2,
       "number": "02",
       "title": "Wireframing",
-      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
     },
     {
       "id": 3,
       "number": "03",
       "title": "Design",
-      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
     },
     {
       "id": 4,
       "number": "04",
       "title": "Development",
-      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
     }
   ],
   "ourproject": [

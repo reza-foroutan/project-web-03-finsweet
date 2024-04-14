@@ -1,11 +1,11 @@
-let ItSWork = async () => {
+const Thiswork = async () => {
   try {
     let data = await fetch(
-      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+      "https://kraken-ship.github.io/bardia-finsweet/db.json"
     );
     let res = await data.json();
-    let result = res.itswork;
-    const itswork = result.map((elem) => {
+    let result = res.thiswork;
+    const thiswork = result.map((elem) => {
       return `<div class="card">
           <div>
             <svg
@@ -57,13 +57,11 @@ let ItSWork = async () => {
           </div>
         </div>`;
     });
-    console.log();
     document.querySelector(
       "div.this-is-work>div.inside-work>div.cards"
-    ).innerHTML = itswork.join("");
+    ).innerHTML = thiswork.join("");
   } catch (error) {
-    console.log(error);
+    console.log(error.mesage);
   }
 };
-
-export default ItSWork;
+export default Thiswork;
