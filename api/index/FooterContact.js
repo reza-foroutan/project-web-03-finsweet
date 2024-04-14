@@ -1,9 +1,11 @@
 const FooterContact = async () => {
   try {
-    let data = await fetch("http://localhost:3000/footercontact");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    // let result = res.footercontact;
-    const footercontact = res.map((elem, index) => {
+    let result = res.footercontact;
+    const footercontact = result.map((elem, index) => {
       return `<div>
           <p>${elem.title}</p>
           <p>${elem.content}</p>

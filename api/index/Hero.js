@@ -1,8 +1,12 @@
 let Hero = async () => {
   try {
-    let data = await fetch("http://localhost:3000/hero");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    let hero = res.map((elem) => {
+    let result = res.hero;
+
+    let hero = result.map((elem) => {
       return `
       <div class="wrapper">
           <div class="Htext">

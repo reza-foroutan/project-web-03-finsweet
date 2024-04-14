@@ -12,7 +12,7 @@
       "name": "About us",
       "title": "About us",
       "alt": "About us",
-      "href": "./about-us.html"
+      "href": "./about.html"
     },
     {
       "id": "3",
@@ -34,7 +34,7 @@
   "logo": [
     {
       "id": 1,
-      "imageSrc": "./public/images/header/Logo.svg",
+      "imageSrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/header/Logo.svg",
       "imageAlt": "finsweet",
       "href": "./index.html"
     }
@@ -76,7 +76,7 @@
       "id": 1,
       "headinghOne": "Building stellar websites for early startups",
       "headingp": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      "illustrationImageSrc": "./public/images/hero/Illustration.svg",
+      "illustrationImageSrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/images/hero/Illustration.svg",
       "illustrationImageAlt": "illustration"
     }
   ],
@@ -86,28 +86,28 @@
       "number": "01",
       "title": "Strategy",
       "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
     },
     {
       "id": 2,
       "number": "02",
       "title": "Wireframing",
       "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
     },
     {
       "id": 3,
       "number": "03",
       "title": "Design",
       "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
     },
     {
       "id": 4,
       "number": "04",
       "title": "Development",
       "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
-      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+      "imageStrategySrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/how-it-works/Mask-Group.svg"
     }
   ],
   "ourproject": [
@@ -116,22 +116,22 @@
       "title": "Workhub office Webflow Webflow Design",
       "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
       "button": "View more",
-      "arrow": "./public/images/our-work/Arrow1.svg",
-      "image": "./public/images/our-work/card1.png"
+      "arrow": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/Arrow1.svg",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/card1.png"
     },
     {
       "id": 2,
       "title": "Unisaas Website Design",
       "button": "View portfolio",
-      "arrow": "./public/images/our-work/Arrow2.svg",
-      "image": "./public/images/our-work/crad2.png"
+      "arrow": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/Arrow2.svg",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/crad2.png"
     },
     {
       "id": 3,
       "title": "Unisaas Website Design",
       "button": "View portfolio",
-      "arrow": "./public/images/our-work/Arrow2.svg",
-      "image": "./public/images/our-work/crad2.png"
+      "arrow": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/Arrow2.svg",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/our-work/crad2.png"
     }
   ],
   "faq": [
@@ -165,55 +165,55 @@
     {
       "id": 1,
       "title": "Uses Client First",
-      "icon": "./public/images/features/Icon1.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon1.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 2,
       "title": "Two Free Revision Round",
-      "icon": "./public/images/features/Icon2.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon2.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 3,
       "title": "Template Customization",
-      "icon": "./public/images/features/Icon3.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon3.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 4,
       "title": "24/7 Support",
-      "icon": "./public/images/features/Icon4.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon4.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 5,
       "title": "Quick Delivery",
-      "icon": "./public/images/features/Icon5.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon5.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 6,
       "title": "Hands-on approach",
-      "icon": "./public/images/features/Icon6.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon6.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 7,
       "title": "Customize with ease",
-      "icon": "./public/images/features/Icon7.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon7.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 8,
       "title": "Perfectly Responsive",
-      "icon": "./public/images/features/Icon8.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon8.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     },
     {
       "id": 9,
       "title": "Friendly Support",
-      "icon": "./public/images/features/Icon9.svg",
+      "icon": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/features/Icon9.svg",
       "content": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
     }
   ],
@@ -223,47 +223,47 @@
       "title": "The best agency we’ve worked with so far. They understand our product and are able to add new features with a greatfocus.",
       "name": "Jenny Wilson",
       "name2": "Vice President",
-      "image": "./public/images/what-our-clients/id.png"
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/what-our-clients/id.png"
     },
     {
       "id": "2",
       "title": "The best agency we’ve worked with so far. They understand our product and are able to add new features with a greatfocus.",
       "name": "Jenny Wilson",
       "name2": "Vice President",
-      "image": "./public/images/what-our-clients/id.png"
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/what-our-clients/id.png"
     },
     {
       "id": "3",
       "title": "The best agency we’ve worked with so far. They understand our product and are able to add new features with a greatfocus.",
       "name": "Jenny Wilson",
       "name2": "Vice President",
-      "image": "./public/images/what-our-clients/id.png"
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/what-our-clients/id.png"
     }
   ],
   "blog": [
     {
       "id": 1,
       "date": "19 Nov 2022",
-      "image": "./public/images/blog/image1.png",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/image1.png",
       "title": "  How one Webflow user grew his single person consultancy from $0-100K in 14 months",
       "tozeh": "  See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "imageReadMoreSrc": "./public/images/blog/Arrow1.svg"
+      "imageReadMoreSrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/Arrow1.svg"
     },
     {
       "id": 2,
       "date": "16 Jan 2022",
-      "image": "./public/images/blog/image2.png",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/image2.png",
       "title": "  How one Webflow user grew his single person consultancy from $0-100K in 14 months",
       "tozeh": "  See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "imageReadMoreSrc": "./public/images/blog/Arrow1.svg"
+      "imageReadMoreSrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/Arrow1.svg"
     },
     {
       "id": 3,
       "date": "12 Apr 2022",
-      "image": "./public/images/blog/image3.png",
+      "image": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/image3.png",
       "title": "  How one Webflow user grew his single person consultancy from $0-100K in 14 months",
       "tozeh": "  See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "imageReadMoreSrc": "./public/images/blog/Arrow1.svg"
+      "imageReadMoreSrc": "https://raw.githubusercontent.com/reza-foroutan/project-web-03-finsweet/main/public/images/blog/Arrow1.svg"
     }
   ],
   "footercontact": [

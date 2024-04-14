@@ -1,6 +1,8 @@
 let Menu = async () => {
   try {
-    let data = await fetch("http://localhost:3000/menu");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
     let menu = res.map((elem) => {
       return `<a href="${elem.name}" alt="${elem.alt}" title="${elem.title}">${elem.name}</a>`;

@@ -1,9 +1,11 @@
 const OurProject = async () => {
   try {
-    let data = await fetch("http://localhost:3000/ourproject");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    // let result = res.ourproject;
-    const thiswork = res.map((elem) => {
+    let result = res.ourproject;
+    const thiswork = result.map((elem) => {
       return `<div>
           <a href="#">
             <div class="card-1">

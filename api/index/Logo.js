@@ -1,7 +1,9 @@
 let Log = async () => {
   try {
     let menu = "";
-    let data = await fetch("http://localhost:3000/logo");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
     const logo = res.map((elem) => {
       return `

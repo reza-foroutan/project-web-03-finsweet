@@ -1,9 +1,11 @@
 const Slider = async () => {
   try {
-    let data = await fetch("http://localhost:3000/slider");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    // let result = res.slider;
-    const slider = res.map((elem, index) => {
+    let result = res.slider;
+    const slider = result.map((elem, index) => {
       return `<div class="swiper-slide">
       <p>
         ${elem.title}

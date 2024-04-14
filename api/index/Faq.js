@@ -1,9 +1,11 @@
 const Faq = async () => {
   try {
-    let data = await fetch("http://localhost:3000/faq");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    // let result = res.faq;
-    const faq = res.map((elem, index) => {
+    let result = res.faq;
+    const faq = result.map((elem, index) => {
       return `<div>
           <input type="radio" id="open-${elem.taq}" name="over" />
           <input type="radio" id="close-${elem.taq}"" name="over" />

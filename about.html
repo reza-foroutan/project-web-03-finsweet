@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./public/icons/FontAwesome.Pro.6.4.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/swiper/swiper-bundle.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- initialize website -->
+    <div id="top"></div>
+    <!-- initialize header -->
+    <header>
+      <!-- initialize navbar -->
+      <nav>
+        <div class="wrapper">
+          <!-- initialize logo -->
+          <div class="logo">
+            <a href="#"> </a>
+          </div>
+          <!-- end initialize logo -->
+          <!-- initialize menu -->
+          <div class="right">
+            <div class="menu"></div>
+            <div class="burgermenu">
+              <input type="radio" id="openmenu" name="modal" />
+              <input type="radio" id="closemenu" name="modal" />
+              <label for="openmenu">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <div class="Hmenu"></div>
+              <label for="closemenu">
+                <div class="bgMenu"></div>
+                <div class="HmenuClose">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </label>
+            </div>
+            <!-- menu end -->
+            <!-- button start -->
+            <button>contact us</button>
+            <!-- button end -->
+          </div>
+          <!-- end initialize menu -->
+        </div>
+      </nav>
+      <!-- end initialize navbar -->
+    </header>
+    <!-- end initialize header -->
+
+    <!-- initialize main -->
+    
+    <!-- end initialize main -->
+    <!-- initialize footer -->
+    <footer>
+      <div class="inside-f">
+        <div>
+          <div class="left">
+            <div></div>
+            <p>
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+            <div class="contact-info"></div>
+          </div>
+          <div class="right">
+            <p>Lets Talk!</p>
+            <p>
+              We are always open to discuss your project, improve your online
+              presence and help with your UX/UI design challenges.
+            </p>
+            <div class="media-icon"></div>
+          </div>
+        </div>
+        <div>
+          <p>Copyright 2022, Finsweet.com</p>
+          <div><div class="menu"></div></div>
+        </div>
+        <div>
+          <p class="one">Copyright 2022, Finsweet.com</p>
+          <a href="#top">
+            Go to the top
+            <i class="fa-regular fa-angle-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- end initialize footer -->
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./api/index/main.js" type="module"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- end initialize website -->
+  </body>
+</html>

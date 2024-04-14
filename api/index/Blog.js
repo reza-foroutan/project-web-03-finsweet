@@ -1,9 +1,11 @@
 const Blog = async () => {
   try {
-    let data = await fetch("http://localhost:3000/blog");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    // let result = res.blog;
-    const blog = res.map((elem, index) => {
+    let result = res.blog;
+    const blog = result.map((elem, index) => {
       return `<div>
           <img
             src="${elem.image}"

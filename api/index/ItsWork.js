@@ -1,8 +1,11 @@
 let ItSWork = async () => {
   try {
-    let data = await fetch("http://localhost:3000/it_works");
+    let data = await fetch(
+      "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
+    );
     let res = await data.json();
-    const itswork = res.map((elem) => {
+    let result = res.itswork;
+    const itswork = result.map((elem) => {
       return `<div class="card">
           <div>
             <svg
