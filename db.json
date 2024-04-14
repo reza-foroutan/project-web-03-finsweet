@@ -30,5 +30,135 @@
     },
     { "id": "5", "name": "FAQ", "title": "FAQ", "alt": "FAQ", "href": "" },
     { "id": "6", "name": "Blog", "title": "Blog", "alt": "Blog", "href": "" }
+  ],
+  "logo": [
+    {
+      "id": 1,
+      "imageSrc": "./public/images/header/Logo.svg",
+      "imageAlt": "finsweet",
+      "href": "./index.html"
+    }
+  ],
+  "menu_mobile": [
+    {
+      "id": "1",
+      "name": "Home",
+      "title": "Home",
+      "alt": "Home",
+      "href": "./index.html"
+    },
+    {
+      "id": "2",
+      "name": "About us",
+      "title": "About us",
+      "alt": "About us",
+      "href": "./about-us.html"
+    },
+    {
+      "id": "3",
+      "name": "Features",
+      "title": "Features",
+      "alt": "Features",
+      "href": "./features.html"
+    },
+    {
+      "id": "4",
+      "name": "Pricing",
+      "title": "Pricing",
+      "alt": "Pricing",
+      "href": "./price.html"
+    },
+    { "id": "5", "name": "FAQ", "title": "FAQ", "alt": "FAQ", "href": "" },
+    { "id": "6", "name": "Blog", "title": "Blog", "alt": "Blog", "href": "" }
+  ],
+  "hero": [
+    {
+      "id": 1,
+      "headinghOne": "Building stellar websites for early startups",
+      "headingp": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "illustrationImageSrc": "./public/images/hero/Illustration.svg",
+      "illustrationImageAlt": "illustration"
+    }
+  ],
+  "it_works": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "Strategy",
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
+      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+    },
+    {
+      "id": 2,
+      "number": "02",
+      "title": "Wireframing",
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
+      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+    },
+    {
+      "id": 3,
+      "number": "03",
+      "title": "Design",
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
+      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "title": "Development",
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
+      "imageStrategySrc": "./public/images/how-it-works/Mask-Group.svg"
+    }
+  ],
+  "ourproject": [
+    {
+      "id": 1,
+      "title": "Workhub office Webflow Webflow Design",
+      "name": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
+      "button": "View more",
+      "arrow": "./public/images/our-work/Arrow1.svg",
+      "image": "./public/images/our-work/card1.png"
+    },
+    {
+      "id": 2,
+      "title": "Unisaas Website Design",
+      "button": "View portfolio",
+      "arrow": "./public/images/our-work/Arrow2.svg",
+      "image": "./public/images/our-work/crad2.png"
+    },
+    {
+      "id": 3,
+      "title": "Unisaas Website Design",
+      "button": "View portfolio",
+      "arrow": "./public/images/our-work/Arrow2.svg",
+      "image": "./public/images/our-work/crad2.png"
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "How much time does it take?",
+      "taq": "1"
+    },
+    {
+      "id": 1,
+      "number": "02",
+      "title": "What is your class naming convention?",
+      "taq": "2"
+    },
+    { "id": 1, "number": "03", "title": "How do you communicate?", "taq": "3" },
+    {
+      "id": 1,
+      "number": "04",
+      "title": "I have a bigger project. Can you handle it?",
+      "taq": "4"
+    },
+    {
+      "id": 1,
+      "number": "05",
+      "title": "What is your class naming convention?",
+      "taq": "5"
+    }
   ]
 }

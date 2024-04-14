@@ -1,166 +1,327 @@
 div.our-work {
   width: 100%;
   height: auto;
-  background-color: var(--White); }
-  div.our-work div.wrapper {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 50px; }
-    div.our-work div.wrapper > div.heading {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: auto; }
-      div.our-work div.wrapper > div.heading > p {
-        color: var(--Dark-blue);
-        font-family: "Poppins";
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 64px;
-        /* 133.333% */ }
-      div.our-work div.wrapper > div.heading > a {
-        display: flex;
-        flex-flow: row nowrap;
-        column-gap: 16px;
-        align-items: center; }
-        div.our-work div.wrapper > div.heading > a > p {
-          color: #282938;
-          font-family: "Poppins";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 28px;
-          /* 175% */ }
-        div.our-work div.wrapper > div.heading > a img {
-          width: 18px; }
-    div.our-work div.wrapper > div.cards {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      row-gap: 22px; }
-      div.our-work div.wrapper > div.cards > a {
-        width: 100%;
-        max-width: 450px; }
-        div.our-work div.wrapper > div.cards > a > div.card1 {
-          width: 100%;
-          height: 240px;
-          position: relative;
-          overflow: hidden; }
-          div.our-work div.wrapper > div.cards > a > div.card1 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-          div.our-work div.wrapper > div.cards > a > div.card1:hover > div.hover {
-            left: 0; }
-          div.our-work div.wrapper > div.cards > a > div.card1 > div.hover {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-            padding-left: 30px;
-            padding-bottom: 15px;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            row-gap: 16px;
-            position: absolute;
-            top: 0;
-            left: -1000px;
-            transition: 300ms; }
-            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > p.one {
-              color: var(--White);
-              font-family: "Poppins";
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 30px;
-              /* 150% */
-              width: 80%; }
-            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > p.two {
-              color: var(--White);
-              font-family: "Poppins";
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 24px;
-              /* 175% */
-              opacity: 0.8;
-              width: 90%; }
-            div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div {
-              display: flex;
-              flex-flow: row nowrap;
-              column-gap: 16px; }
-              div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div > p {
-                color: var(--Yellow);
-                font-family: "Poppins";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 28px;
-                /* 175% */ }
-              div.our-work div.wrapper > div.cards > a > div.card1 > div.hover > div img {
-                display: none; }
-      div.our-work div.wrapper > div.cards > div.cards-c {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        row-gap: 22px;
-        width: 100%;
-        height: 100%;
-        flex-shrink: 0; }
-        div.our-work div.wrapper > div.cards > div.cards-c > a {
-          width: 100%;
-          height: auto;
-          max-width: 450px; }
-          div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 {
-            width: 100%;
-            height: 240px;
-            position: relative;
-            overflow: hidden; }
-            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover; }
-            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2:hover > div.hover {
-              left: 0; }
-            div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover {
-              display: flex;
-              flex-flow: column nowrap;
-              justify-content: flex-end;
-              row-gap: 10px;
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-              padding-left: 56px;
-              padding-bottom: 45px;
-              position: absolute;
-              left: -1000px;
-              bottom: 0;
-              transition: 300ms; }
-              div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > p {
-                color: var(--White);
-                font-family: "Poppins";
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 30px;
-                /* 150% */
-                width: 200px; }
-              div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div {
-                display: flex;
-                flex-flow: row nowrap;
-                column-gap: 16px; }
-                div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div > p {
-                  color: var(--Yellow);
-                  font-family: "Poppins";
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 28px;
-                  /* 175% */ }
-                div.our-work div.wrapper > div.cards > div.cards-c > a > div.card2 > div.hover > div img {
-                  display: none; }
+  background-color: white;
+}
+
+div.our-work > div.inside-work {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 64px;
+}
+
+div.our-work > div.inside-work > div.header {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+div.our-work > div.inside-work > div.header > p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+div.our-work > div.inside-work > div.header > a {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 16px;
+  align-items: center;
+  text-decoration: none;
+}
+
+div.our-work > div.inside-work > div.header > a > p {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+div.our-work > div.inside-work > div.header > a > svg {
+  width: 24px;
+  height: 15px;
+  flex-shrink: 0;
+  fill: var(--Royal-Blue, #2405f2);
+  stroke-width: 1.5px;
+  stroke: var(--Dark-blue, #282938);
+}
+
+div.our-work > div.inside-work > div.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+div.our-work > div.inside-work > div.content > div {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+div.our-work > div.inside-work > div.content > div > a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.card-1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.card-1 > img {
+  width: 100%;
+  height: auto;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.cover {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  /* padding-left: 20px; */
+  /* padding-bottom: 66px; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  row-gap: 16px;
+  position: absolute;
+  top: 0;
+  left: -450px;
+  transition: 3000ms;
+  text-align: center;
+  display: none;
+}
+
+div.our-work > div.inside-work > div.content > div > a:hover div.cover {
+  left: 0;
+  display: flex;
+  transition: 3000ms;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.cover > p {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div
+  > a
+  > div.cover
+  > p:nth-of-type(2) {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.cover > div {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 16px;
+  /* margin-top: 24px; */
+  justify-content: center;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.cover > div > p {
+  color: var(--Yellow, #fcd980);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+div.our-work > div.inside-work > div.content > div > a > div.cover > div > svg {
+  width: 24px;
+  height: 28px;
+  flex-shrink: 0;
+  stroke-width: 1.5px;
+  stroke: var(--Yellow, #fcd980);
+}
+
+div.our-work > div.inside-work > div.content > div.cards {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 32px;
+  /* top: -50px; */
+}
+
+div.our-work > div.inside-work > div.content > div.cards > div.card-1 {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1:nth-of-type(1):hover
+  div.cover {
+  display: flex;
+  transition: 300ms;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1:nth-of-type(2):hover
+  div.cover {
+  display: flex;
+  transition: 300ms;
+  top: 53%;
+}
+
+div.our-work > div.inside-work > div.content > div.cards > div.card-1 > img {
+  width: 80%;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1:nth-last-of-type(1)
+  > div.cover {
+  width: 100%;
+  height: 47%;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+  justify-content: center;
+  display: none;
+  transition: 300ms;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1:nth-last-of-type(2)
+  > div.cover {
+  width: 100%;
+  height: 47%;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+  justify-content: center;
+  display: none;
+  transition: 300ms;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1
+  > div.cover
+  > p {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  /* 150% */
+  width: 259px;
+  margin-left: 56px;
+  text-align: left;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1
+  > div.cover
+  > div {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 16px;
+  margin-left: 56px;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1
+  > div.cover
+  > div
+  > p {
+  color: var(--Yellow, #fcd980);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+}
+
+div.our-work
+  > div.inside-work
+  > div.content
+  > div.cards
+  > div.card-1
+  > div.cover
+  > div
+  > svg {
+  width: 24px;
+  height: 28px;
+  flex-shrink: 0;
+  stroke-width: 1.5px;
+  stroke: var(--Yellow, #fcd980);
+}

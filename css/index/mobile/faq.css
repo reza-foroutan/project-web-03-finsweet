@@ -1,172 +1,429 @@
 div.faq {
   width: 100%;
-  height: auto; }
-  div.faq div.wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    align-items: center; }
-    div.faq div.wrapper div.h {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: 8px;
-      align-items: center; }
-      div.faq div.wrapper div.h p {
-        color: var(--Dark-blue);
-        font-family: "Poppins";
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 40px;
-        /* 147.368% */
-        text-align: center; }
-      div.faq div.wrapper div.h a {
-        color: var(--Royal-blue);
-        text-align: center;
-        font-family: "Poppins";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 32px;
-        /* 177.778% */
-        opacity: 0.9; }
-    div.faq div.wrapper div.q {
-      width: 95%;
-      height: auto;
-      max-width: 500px;
-      display: flex;
-      flex-flow: column nowrap; }
-      div.faq div.wrapper div.q div {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        position: relative; }
-        div.faq div.wrapper div.q div div.ask {
-          display: flex;
-          flex-flow: row nowrap;
-          column-gap: 20px;
-          align-items: center;
-          width: 100%;
-          height: 80px; }
-          div.faq div.wrapper div.q div div.ask p.number {
-            color: var(--Royal-Blue, #2405f2);
-            text-align: center;
-            font-family: "Poppins";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 36px;
-            /* 150% */ }
-          div.faq div.wrapper div.q div div.ask p.q {
-            color: var(--Dark-blue);
-            font-family: "Poppins";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 22px;
-            /* 150% */
-            width: 80%; }
-        div.faq div.wrapper div.q div label {
-          display: inline-block;
-          width: fit-content;
-          cursor: pointer; }
-          div.faq div.wrapper div.q div label i {
-            color: var(--Dark-blue); }
-        div.faq div.wrapper div.q div label.s {
-          position: absolute;
-          right: 0;
-          top: 32px;
-          background-color: var(--White); }
-        div.faq div.wrapper div.q div label.c {
-          position: absolute;
-          right: 0;
-          top: 32px;
-          background-color: var(--White);
-          display: none; }
-        div.faq div.wrapper div.q div label.o {
-          width: 100%; }
-        div.faq div.wrapper div.q div div.i {
-          width: 100%;
-          height: 0;
-          transition: 300ms;
-          padding: 0 40px;
-          overflow: hidden; }
-          div.faq div.wrapper div.q div div.i p {
-            color: var(--Dark-blue);
-            font-family: "Poppins";
-            font-size: 10px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 16px;
-            /* 177.778% */
-            opacity: 0.9; }
-      div.faq div.wrapper div.q hr {
-        border: none;
-        background-color: #ececf1;
-        width: 100%;
-        height: 2px; }
+  height: auto;
+  background: #fff;
+}
 
-#show1:checked ~ div.i {
-  height: 80px; }
+div.faq > div.inside-faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
+}
 
-#show1:checked ~ label.s {
-  display: none; }
+div.faq > div.inside-faq > div.faq-heading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 16px;
+  align-items: center;
+}
 
-#show1:checked ~ label.c {
-  display: inline-block; }
+div.faq > div.inside-faq > div.faq-heading > p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+}
 
-#show2:checked ~ div.i {
-  height: 80px; }
+div.faq > div.inside-faq > div.faq-heading > a {
+  color: var(--Royal-Blue, #2405f2);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  /* 177.778% */
+  text-decoration: none;
+  opacity: 0.87;
+  text-align: left;
+}
 
-#show2:checked ~ label.s {
-  display: none; }
+div.faq > div.inside-faq > div.faq-q {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
-#show2:checked ~ label.c {
-  display: inline-block; }
+div.faq > div.inside-faq > div.faq-q > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  transition: 300ms;
+  transition: 300ms;
+  border-bottom: 3px solid #ececf1;
+}
 
-#show3:checked ~ div.i {
-  height: 80px; }
+div.faq > div.inside-faq > div.faq-q > div > div.q {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
 
-#show3:checked ~ label.s {
-  display: none; }
+div.faq > div.inside-faq > div.faq-q > div > div.q > p:nth-of-type(1) {
+  color: var(--Royal-Blue, #2405f2);
+  text-align: center;
 
-#show3:checked ~ label.c {
-  display: inline-block; }
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  /* 150% */
+}
 
-#show4:checked ~ div.i {
-  height: 80px; }
+div.faq > div.inside-faq > div.faq-q > div > div.q > p:nth-of-type(2) {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36px;
+}
 
-#show4:checked ~ label.s {
-  display: none; }
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-1"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+}
 
-#show4:checked ~ label.c {
-  display: inline-block; }
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-1"] > svg {
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
 
-#show5:checked ~ div.i {
-  height: 80px; }
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-1"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
 
-#show5:checked ~ label.s {
-  display: none; }
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-1"] > svg {
+  transform: rotate(180deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
 
-#show5:checked ~ label.c {
-  display: inline-block; }
+div.faq > div.inside-faq > div.faq-q > div > div.over {
+  width: 100%;
+  height: 100px;
+  flex-flow: column nowrap;
+  position: relative;
+  display: none;
+  transition: 3000ms;
+}
 
-#close1:checked ~ div.i {
-  height: 0; }
+div.faq > div.inside-faq > div.faq-q > div > div.over > p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  display: inline-block;
+  margin-left: 43px;
+  text-align: left;
+}
 
-#close2:checked ~ div.i {
-  height: 0; }
+#open-1,
+#close-1 {
+  display: none;
+}
 
-#close3:checked ~ div.i {
-  height: 0; }
+#open-1:checked ~ div.over {
+  display: block;
+  transition: 3000ms;
+}
 
-#close4:checked ~ div.i {
-  height: 0; }
+#open-1:checked ~ label[for="open-1"] {
+  display: none;
+}
 
-#close5:checked ~ div.i {
-  height: 0; }
+#open-1:checked ~ label[for="close-1"] {
+  display: block;
+}
+
+#close-1:checked ~ div.over {
+  display: none;
+}
+
+#close-1:checked ~ label[for="close-1"] {
+  display: none;
+}
+
+#close-1:checked ~ label[for="open-1"] {
+  display: block;
+}
+
+/* ///////////////////// */
+#open-2,
+#close-2 {
+  display: none;
+}
+
+#open-2:checked ~ div.over {
+  display: block;
+  transition: 3000ms;
+}
+
+#open-2:checked ~ label[for="open-2"] {
+  display: none;
+}
+
+#open-2:checked ~ label[for="close-2"] {
+  display: block;
+}
+
+#close-2:checked ~ div.over {
+  display: none;
+}
+
+#close-2:checked ~ label[for="close-2"] {
+  display: none;
+}
+
+#close-2:checked ~ label[for="open-2"] {
+  display: block;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-2"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-2"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-2"] > svg {
+  transform: rotate(180deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-2"] > svg {
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+/* //////////// */
+#open-3,
+#close-3 {
+  display: none;
+}
+
+#open-3:checked ~ div.over {
+  display: block;
+  transition: 3000ms;
+}
+
+#open-3:checked ~ label[for="open-3"] {
+  display: none;
+}
+
+#open-3:checked ~ label[for="close-3"] {
+  display: block;
+}
+
+#close-3:checked ~ div.over {
+  display: none;
+}
+
+#close-3:checked ~ label[for="close-3"] {
+  display: none;
+}
+
+#close-3:checked ~ label[for="open-3"] {
+  display: block;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-3"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-3"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-3"] > svg {
+  transform: rotate(180deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-3"] > svg {
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+/* //////////////////////////////// */
+#open-4,
+#close-4 {
+  display: none;
+}
+
+#open-4:checked ~ div.over {
+  display: block;
+  transition: 3000ms;
+}
+
+#open-4:checked ~ label[for="open-4"] {
+  display: none;
+}
+
+#open-4:checked ~ label[for="close-4"] {
+  display: block;
+}
+
+#close-4:checked ~ div.over {
+  display: none;
+}
+
+#close-4:checked ~ label[for="close-4"] {
+  display: none;
+}
+
+#close-4:checked ~ label[for="open-4"] {
+  display: block;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-4"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-4"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-4"] > svg {
+  transform: rotate(180deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-4"] > svg {
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+/* 
+
+////////////////////////////////////////////// */
+#open-5,
+#close-5 {
+  display: none;
+}
+
+#open-5:checked ~ div.over {
+  display: block;
+  transition: 3000ms;
+}
+
+#open-5:checked ~ label[for="open-5"] {
+  display: none;
+}
+
+#open-5:checked ~ label[for="close-5"] {
+  display: block;
+}
+
+#close-5:checked ~ div.over {
+  display: none;
+}
+
+#close-5:checked ~ label[for="close-5"] {
+  display: none;
+}
+
+#close-5:checked ~ label[for="open-5"] {
+  display: block;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-5"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-5"] {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="close-5"] > svg {
+  transform: rotate(180deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
+
+div.faq > div.inside-faq > div.faq-q > div > label[for="open-5"] > svg {
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  fill: var(--Dark-blue, #282938);
+  opacity: 0.7;
+}
