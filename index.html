@@ -25,8 +25,6 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
   </head>
   <body>
-    <!-- initialize website -->
-    <div id="top"></div>
     <!-- initialize header -->
     <header>
       <!-- initialize navbar -->
@@ -65,13 +63,37 @@
       <!-- end initialize navbar -->
     </header>
     <!-- end initialize header -->
-
-    <!-- initialize main -->
-    <main>
-      <!-- initialize hreo -->
-      <div class="hero"></div>
-      <!-- end initialize hreo -->
-      <!-- initialize how it works -->
+    <!-- initialize website -->
+    <div class="wrapper">
+      <!--hero-->
+      <div class="hero">
+        <div class="menu">
+          <div class="logo"></div>
+          <div class="right">
+            <nav>
+              <ul></ul>
+            </nav>
+          </div>
+          <div class="contact">
+            <button>contact us</button>
+          </div>
+          <div class="toggleMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="bHero">
+          <div class="text"></div>
+          <div class="illustration">
+            <div class="center">
+              <img src="./images/Illustration.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end hero-->
+      <!--make this-is-work-->
       <div class="this-is-work">
         <div class="inside-work">
           <div class="heading">
@@ -103,22 +125,33 @@
           <div class="cards"></div>
         </div>
       </div>
-      <!-- end initialize how it works -->
-      <!-- initialize our work -->
+      <!--end this-is-work-->
+      <!-- make-our-work -->
       <div class="our-work">
         <div class="inside-work">
           <div class="header">
             <p>View our projects</p>
             <a href="#">
               <p>view more</p>
-              <img src="./public/images/our-work/Arrow1.svg" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="12"
+                viewBox="0 0 25 12"
+                fill="none"
+              >
+                <path
+                  d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z"
+                  fill="#282938"
+                />
+              </svg>
             </a>
           </div>
           <div class="content"></div>
         </div>
       </div>
-      <!-- end initialize our work -->
-      <!-- initialize  features-->
+      <!-- end make-our-work -->
+      <!-- make features -->
       <div class="features">
         <div class="inside-f">
           <div class="header">
@@ -130,101 +163,30 @@
           </div>
         </div>
       </div>
-      <!-- end initialize features -->
-      <!-- initialize What our clients say about us -->
-      <div class="what-our-clients">
-        <div class="wrapper">
+      <!-- end make features -->
+      <!-- make Testimonials -->
+      <div class="Testimonials">
+        <div class="inside-T">
           <div class="heading">
-            <p class="one">What our clients say about us</p>
-            <p class="two">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
-            </p>
-          </div>
-          <div class="slider">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <p>
-                    "The best agency we’ve worked with so far. They understand
-                    our product and are able to add new features with a great
-                    focus."
-                  </p>
-                  <div class="id">
-                    <img
-                      src="./public/images/what-our-clients/id.png"
-                      alt="id"
-                    />
-                    <div class="text">
-                      <p class="one">Jenny Wilson</p>
-                      <p class="two">Vice President</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <p>
-                    "The best agency we’ve worked with so far. They understand
-                    our product and are able to add new features with a great
-                    focus."
-                  </p>
-                  <div class="id">
-                    <img
-                      src="./public/images/what-our-clients/id.png"
-                      alt="id"
-                    />
-                    <div class="text">
-                      <p class="one">Jenny Wilson</p>
-                      <p class="two">Vice President</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <p>
-                    "The best agency we’ve worked with so far. They understand
-                    our product and are able to add new features with a great
-                    focus."
-                  </p>
-                  <div class="id">
-                    <img
-                      src="./public/images/what-our-clients/id.png"
-                      alt="id"
-                    />
-                    <div class="text">
-                      <p class="one">Jenny Wilson</p>
-                      <p class="two">Vice President</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <p>
-                    "The best agency we’ve worked with so far. They understand
-                    our product and are able to add new features with a great
-                    focus."
-                  </p>
-                  <div class="id">
-                    <img
-                      src="./public/images/what-our-clients/id.png"
-                      alt="id"
-                    />
-                    <div class="text">
-                      <p class="one">Jenny Wilson</p>
-                      <p class="two">Vice President</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next">
-                <i class="fa-regular fa-angle-right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="fa-regular fa-angle-right"></i>
-              </div>
+            <div><p>What our clients say about us</p></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+              </p>
             </div>
           </div>
+          <div class="slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <!-- end make Testimonials -->
         </div>
       </div>
-      <!-- end initialize What our clients say about us -->
-      <!-- initialize faq -->
+      <!-- end make Testimonials -->
+      <!-- make faq -->
       <div class="faq">
         <div class="inside-faq">
           <div class="faq-heading">
@@ -234,24 +196,24 @@
           <div class="faq-q"></div>
         </div>
       </div>
-      <!-- end initialize faq -->
-      <!-- initialize contact -->
-      <div class="contact">
-        <div class="wrapper">
-          <div class="left">
-            <img src="./public/images/contact/contact.jpeg" alt="contact" />
-            <div class="text">
-              <p class="one">Building stellar websites for early startups</p>
-              <p class="two">
+      <!-- end make faq -->
+      <!--make contact-form-->
+      <div class="contact-form">
+        <div class="inside-form">
+          <div>
+            <img src="./images/woman-writing-on-paper-3228878.jpg" alt="" />
+            <div>
+              <p>Building stellar websites for early startups</p>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua ut
                 enim.
               </p>
             </div>
           </div>
-          <div class="right">
-            <p class="one">Send inquiry</p>
-            <p class="two">
+          <div>
+            <p>Send inquiry</p>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </p>
@@ -260,72 +222,74 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Your Name"
+                placeholder="your name"
               />
-              <input type="text" name="email" id="email" placeholder="Email" />
+              <input type="text" name="email" id="email" placeholder="email" />
               <input
                 type="text"
-                name="URl"
-                id="URL"
+                name="figma"
+                id="figma"
                 placeholder="Paste your Figma design URL"
               />
               <input type="submit" value="Send an Inquiry" />
             </form>
-            <div class="bt">
-              <a href="#">
-                Get in touch with us
-                <img src="./public/images/contact/Arrow2.svg" alt="arrow" />
-              </a>
+            <div>
+              <a href="">Get in touch with us </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="12"
+                viewBox="0 0 25 12"
+                fill="none"
+              >
+                <path
+                  d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z"
+                  fill="#F4F6FC"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-      <!-- end initialize contact -->
-      <!-- initialize blog -->
+      <!--end make contact-form-->
+      <!--make blog-->
       <div class="blog">
         <div class="inside-blog">
           <p>Our blog</p>
           <div class="cards"></div>
         </div>
       </div>
-      <!-- end initialize blog -->
-    </main>
-    <!-- end initialize main -->
-    <!-- initialize footer -->
-    <footer>
-      <div class="inside-f">
-        <div>
-          <div class="left">
+      <!--end make blog-->
+      <!--make footer-->
+      <footer>
+        <div class="inside-f">
+          <div>
+            <div class="left">
+              <div></div>
+              <p>
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+              <div class="contact-info"></div>
+            </div>
+            <div class="right">
+              <p>Lets Talk!</p>
+              <p>
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="media-icon"></div>
+            </div>
+          </div>
+          <div>
+            <p>Copyright 2022, Finsweet.com</p>
             <div></div>
-            <p>
-              We are always open to discuss your project and improve your online
-              presence.
-            </p>
-            <div class="contact-info"></div>
-          </div>
-          <div class="right">
-            <p>Lets Talk!</p>
-            <p>
-              We are always open to discuss your project, improve your online
-              presence and help with your UX/UI design challenges.
-            </p>
-            <div class="media-icon"></div>
           </div>
         </div>
-        <div>
-          <p>Copyright 2022, Finsweet.com</p>
-          <div><div class="menu"></div></div>
-        </div>
-        <div>
-          <p class="one">Copyright 2022, Finsweet.com</p>
-          <a href="#top">
-            Go to the top
-            <i class="fa-regular fa-angle-up"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
-    <!-- end initialize footer -->
+      </footer>
+      <!--end make footer-->
+    </div>
+    <!--end make project-->
 
     <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
     <script src="./swiper/swiper-bundle.min.js"></script>
