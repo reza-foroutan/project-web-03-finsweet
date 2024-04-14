@@ -4,7 +4,7 @@ const FooterMenu = async () => {
       "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
     );
     let res = await data.json();
-    let result = res.menutop;
+    let result = res.footermenu;
     const footermenu = result.map((elem, index) => {
       return `<a href="${elem.link}"><p>${elem.name}</p></a>`;
     });

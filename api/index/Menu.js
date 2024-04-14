@@ -4,7 +4,8 @@ let Menu = async () => {
       "https://reza-foroutan.github.io/project-web-03-finsweet/db.json"
     );
     let res = await data.json();
-    let menu = res.map((elem) => {
+    let result = res.menu;
+    let menu = result.map((elem) => {
       return `<a href="${elem.name}" alt="${elem.alt}" title="${elem.title}">${elem.name}</a>`;
     });
     console.log();
